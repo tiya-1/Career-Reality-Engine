@@ -1,0 +1,90 @@
+/* Container */
+.signup-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Card */
+.signup-card {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  background: rgba(255, 255, 255, 0.96);
+  padding: 32px;
+  border-radius: 18px;
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.15);
+}
+
+/* Title */
+.signup-title {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 24px;
+  font-weight: 700;
+  color: #6b3cff; /* same as login */
+}
+
+/* Form labels and inputs */
+.signup-card label {
+  display: block;
+  margin-top: 14px;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #0f172a;
+}
+
+.signup-card input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.signup-card input:focus {
+  border-color: #6b3cff;
+  box-shadow: 0 0 8px rgba(107, 60, 255, 0.3);
+}
+
+/* Error message */
+.form-error {
+  margin-top: 14px;
+  color: #dc2626;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Buttons */
+.signup-submit {
+  width: 100%;
+  margin-top: 28px;
+  background-color: #6b3cff; /* same as login button */
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.signup-submit:hover {
+  background-color: #5931e0;
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #6b3cff;
+}

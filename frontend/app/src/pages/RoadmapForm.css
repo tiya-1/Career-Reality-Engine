@@ -1,0 +1,245 @@
+/* =========================
+   FORM WRAPPER
+========================= */
+/* =========================
+   FORM WRAPPER
+========================= */
+.form-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start; /* changed from center */
+  justify-content: center;
+  padding: 100px 20px 40px; /* top padding added to push below navbar */
+  box-sizing: border-box;   /* ensure padding doesn't break layout */
+}
+
+
+/* =========================
+   FORM CARD
+========================= */
+.form-card {
+  position: relative;
+  width: 100%;
+  max-width: 520px;
+  background: rgba(255, 255, 255, 0.96);
+  padding: 32px;
+  border-radius: 18px;
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.15);
+}
+
+/* =========================
+   CLOSE BUTTON
+========================= */
+.close-btn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(0, 0, 0, 0.05);
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #475569;
+  transition: all 0.25s ease;
+}
+
+.close-btn:hover {
+  background: #ede9fe;
+  color: #6b3cff;
+}
+
+/* =========================
+   TITLE
+========================= */
+.form-title {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 26px;
+  font-weight: 700;
+  color: #6b3cff;
+}
+
+/* =========================
+   LABELS & INPUTS
+========================= */
+label {
+  display: block;
+  margin: 14px 0 6px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+  outline: none;
+  font-size: 15px;
+  transition: border 0.2s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: #6b3cff;
+}
+
+/* =========================
+   RADIO & CHECKBOX GROUPS
+========================= */
+.radio-group,
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 8px;
+}
+
+.radio-group label,
+.checkbox-group label {
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.radio-group input,
+.checkbox-group input {
+  margin-right: 6px;
+}
+
+/* =========================
+   ACTION BUTTONS
+========================= */
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 34px;
+}
+
+/* Back button */
+.form-actions button:first-child {
+  background: #e5e7eb;
+  color: #0f172a;
+  padding: 12px 26px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* Primary buttons (Next / Generate) */
+.btn-primary {
+  background: linear-gradient(135deg, #6b3cff, #9d7ff2);
+  color: #ffffff;
+  padding: 13px 32px;
+  border-radius: 12px;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(107, 60, 255, 0.45);
+  transition: all 0.25s ease;
+}
+
+/* Hover effect */
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(107, 60, 255, 0.65);
+}
+
+/* =========================
+   FINAL NOTE
+========================= */
+.final-note {
+  margin-top: 22px;
+  font-size: 14px;
+  color: #475569;
+  text-align: center;
+}
+/* Ask Question Button - Purple like tier cards */
+.show-ask-btn,
+.ask-box button {
+  background: #7c3aed; /* same purple as tier card */
+  color: #ffffff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.show-ask-btn:hover,
+.ask-box button:hover {
+  background: #5b21b6; /* darker purple on hover */
+}
+
+/* Cancel button */
+.ask-box .cancel-btn {
+  background: rgba(255,255,255,0.1);
+  color: #6b3cff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.ask-box .cancel-btn:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+/* Ask Question Box / Textarea */
+/* Ask a Question Button & Submit button - match tier card purple */
+.pricing-page .show-ask-btn,
+.pricing-page .ask-box button {
+  background-color: #7c3aed !important; /* purple like tier cards */
+  color: #ffffff !important;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.pricing-page .show-ask-btn:hover,
+.pricing-page .ask-box button:hover {
+  background-color: #5b21b6 !important; /* darker purple on hover */
+}
+
+/* Cancel button */
+.pricing-page .ask-box .cancel-btn {
+  background: rgba(255,255,255,0.1) !important;
+  color: #ffffff !important;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.pricing-page .ask-box .cancel-btn:hover {
+  background: rgba(255,255,255,0.2) !important;
+}
+
+/* Textarea styling (light + dark mode) */
+.pricing-page .ask-box textarea {
+  width: 100%;
+  min-height: 80px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 8px;
+  resize: none;
+  background: rgba(255,255,255,0.95);
+  color: #0f172a;
+}
+
+body.dark .pricing-page .ask-box textarea {
+  background: rgba(58,39,96,0.8);
+  color: #ffffff;
+  border: 1px solid #7c3aed;
+}
+

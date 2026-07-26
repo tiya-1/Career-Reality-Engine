@@ -1,0 +1,206 @@
+/* =========================
+   Shared Page Styles
+========================= */
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f8f9fa;
+  color: #0f172a;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark {
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+/* =========================
+   NAVBAR OFFSET FIX
+========================= */
+
+/* ONLY this handles navbar height */
+.navbar-spacer {
+  height: 110px; /* must be >= navbar height */
+}
+
+/* =========================
+   Hero Section (FIXED)
+========================= */
+
+.hero {
+  text-align: center;
+  padding: 60px 20px 60px; /* ❌ removed top clash */
+}
+
+.hero h1 {
+  font-size: 50px;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 20px;
+}
+
+body.dark .hero h1 {
+  color: #ffffff;
+}
+
+.hero p {
+  font-size: 20px;
+  color: #334155;
+  margin: 20px 0;
+}
+
+body.dark .hero p {
+  color: #e5e7eb;
+}
+
+.hero-buttons {
+  margin-top: 20px;
+}
+
+/* =========================
+   Buttons
+========================= */
+
+.btn-primary {
+  margin: 10px;
+  padding: 16px 36px;
+  font-size: 18px;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+  background: #6b3cff;
+  color: #ffffff;
+  box-shadow: 0 10px 25px rgba(107,60,255,0.3);
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+}
+
+/* .btn-primary.btn-secondary {
+  background: #ffffff;
+  color: #6b3cff;
+  border: 2px solid #6b3cff;
+} */
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(107,60,255,0.4);
+}
+.btn-primary.btn-secondary {
+  background: #ffffff !important;
+  color: #6b3cff !important;
+  border: 2px solid #6b3cff;
+  font-weight: 600;
+}
+
+/* Hover state */
+.btn-primary.btn-secondary:hover {
+  background: #6b3cff !important;
+  color: #ffffff !important;
+}
+
+/* =========================
+   Feature / Blog / Pricing Cards
+========================= */
+
+.feature-cards,
+.blog-cards,
+.pricing-tiers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.feature-card,
+.blog-card,
+.tier-card {
+  background: rgba(179,153,249,0.2);
+  padding: 25px 20px;
+  border-radius: 16px;
+  color: #0f172a;
+  text-align: left;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+}
+
+.feature-card:hover,
+.blog-card:hover,
+.tier-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  background: rgba(107,60,255,0.1);
+}
+
+body.dark .feature-card,
+body.dark .blog-card,
+body.dark .tier-card {
+  background: rgba(58,39,96,0.8);
+  color: #ffffff;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* =========================
+   Feature Icons & Titles
+========================= */
+
+.feature-card h3 {
+  margin-bottom: 12px;
+  font-size: 22px;
+}
+
+.feature-icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* =========================
+   List Styling (clean spacing)
+========================= */
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 16px;
+}
+
+ul li {
+  margin-bottom: 14px;
+  padding: 12px 16px;
+  border-left: 4px solid #6b3cff;
+  background: rgba(107,60,255,0.06);
+  border-radius: 8px;
+  transition: transform 0.3s, background 0.3s;
+}
+
+ul li:hover {
+  transform: translateX(4px);
+  background: rgba(107,60,255,0.15);
+}
+
+body.dark ul li {
+  background: rgba(107,60,255,0.2);
+  color: #ffffff;
+}
+
+/* =========================
+   CTA / System Thinking
+========================= */
+
+.system-thinking,
+.overview-cta {
+  text-align: center;
+  margin: 80px 0;
+}
+
+.flow-line {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+body.dark .flow-line {
+  color: #e5e7eb;
+}

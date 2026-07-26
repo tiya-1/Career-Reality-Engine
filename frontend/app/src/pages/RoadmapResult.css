@@ -1,0 +1,279 @@
+/* RoadmapResult.css */
+.navbar-spacer {
+  height: 100px;
+}
+
+/* Container */
+.roadmap-result {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: 'Inter', sans-serif;
+  color: #0f172a;
+}
+
+/* Hero / Header */
+.roadmap-result .hero {
+  padding-top: 60px;
+  text-align: center;
+}
+
+.roadmap-result {
+  padding-top: 120px;
+}
+
+/* Container */
+.roadmap-result {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 120px 40px 60px;
+  font-family: 'Inter', sans-serif;
+  color: #0f172a;
+}
+
+.roadmap-result .hero h1,
+.roadmap-result .hero h2 {
+  font-weight: 800;
+  margin-bottom: 16px;
+  line-height: 1.2;
+  color: #0f172a;
+}
+
+body.dark .roadmap-result .hero h1,
+body.dark .roadmap-result .hero h2 {
+  color: #ffffff;
+}
+
+.roadmap-result .gradient-text {
+  background: linear-gradient(90deg, #b399f9, #6b3cff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.roadmap-result,
+.result-section,
+.failure-patterns {
+  min-height: auto;
+  padding: 60px 0px;
+}
+
+.result-section,
+.failure-patterns {
+  position: relative;
+  z-index: 1;
+}
+
+/* ================= FIX #1 ================= */
+.features-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+  overflow: visible; /* 🔥 allows popup to escape */
+}
+/* ========================================== */
+
+.features-cards {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.result-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Individual Card */
+.card {
+  background: rgba(255,255,255,0.9);
+  padding: 2rem;
+  border-radius: 16px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  color: #0f172a;
+  position: relative;
+
+  /* ================= FIX #2 ================= */
+  z-index: 1;
+  /* ========================================== */
+
+  cursor: pointer;
+}
+
+body.dark .features-section p,
+body.dark .features-section li,
+body.dark .reality-box p,
+body.dark .reality-box li,
+body.dark .card p,
+body.dark .card li {
+  color: #e5e7eb;
+}
+
+body.dark .card {
+  background: rgba(58,39,96,0.9);
+  color: #fff;
+  border: 1px solid #6b3cff;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+
+  /* ================= FIX #2 ================= */
+  z-index: 50; /* 🔥 lift hovered card above others */
+  /* ========================================== */
+}
+
+/* Card Info Popup */
+.card-info-popup {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255,255,255,0.95);
+  border: 1px solid #b399f9;
+  border-radius: 12px;
+  padding: 1rem;
+  margin-top: 12px;
+  width: 260px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+
+  /* ================= FIX #3 ================= */
+  z-index: 100; /* 🔥 always on top */
+  /* ========================================== */
+}
+
+body.dark .card-info-popup {
+  background: rgba(43,31,77,0.95);
+  border: 1px solid #6b3cff;
+  color: #fff;
+}
+
+.card-info-popup h4 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.card-info-popup ul {
+  list-style-type: disc;
+  padding-left: 18px;
+  font-size: 14px;
+}
+
+/* Feasibility Progress Bar */
+.progress-bar-container {
+  background: #e5e7eb;
+  height: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 12px 0;
+}
+
+body.dark .progress-bar-container {
+  background: rgba(255,255,255,0.2);
+}
+
+.progress-bar {
+  height: 10px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #b399f9, #6b3cff);
+}
+
+/* Reality & Risk Box */
+.reality-box {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px 30px;
+  border-left: 4px solid #b399f9;
+  background: rgba(255,255,255,0.9);
+  border-radius: 12px;
+  font-weight: 500;
+}
+
+body.dark .reality-box {
+  background: rgba(58,39,96,0.9);
+  border-left: 4px solid #6b3cff;
+  color: #fff;
+}
+
+.reality-box h3 {
+  font-size: 22px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.reality-box ul {
+  margin-top: 12px;
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* Next Steps / Actions Buttons */
+.hero .cta-btn {
+  background: #b399f9;
+  color: #fff;
+  font-weight: 600;
+  padding: 14px 32px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+body.dark .hero .cta-btn {
+  background: #6b3cff;
+}
+
+.hero .cta-btn:hover {
+  background: #9d7ff2;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .features-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .hero h1 {
+    font-size: 44px;
+  }
+}
+
+@media (max-width: 600px) {
+  .features-cards {
+    grid-template-columns: 1fr;
+  }
+  .hero h1 {
+    font-size: 36px;
+  }
+  .card-info-popup {
+    width: 220px;
+  }
+}
+/* Universal CTA Button */
+.cta-btn {
+  background: #b399f9;
+  color: #fff;
+  font-weight: 600;
+  padding: 14px 32px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+}
+
+body.dark .cta-btn {
+  background: #6b3cff;
+}
+
+.cta-btn:hover {
+  background: #9d7ff2;
+  transform: translateY(-2px);
+}

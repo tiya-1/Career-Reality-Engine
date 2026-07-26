@@ -1,0 +1,159 @@
+/* ================= DASHBOARD CONTAINER ================= */
+.dashboard-container {
+  padding-top: 120px; /* 🔥 FIXES NAVBAR OVERLAP */
+}
+
+.roadmap-dashboard {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 120px 40px 60px;
+  font-family: 'Inter', sans-serif;
+  color: #0f172a;
+}
+
+body.dark .roadmap-dashboard {
+  color: #ffffff;
+}
+
+/* ================= HEADER ================= */
+
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.dashboard-header h1 {
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.dashboard-header p {
+  opacity: 0.7;
+}
+
+/* ================= GRID ================= */
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* ================= ROADMAP CARD ================= */
+
+.dashboard-card {
+  background: rgba(255,255,255,0.9);
+  border-radius: 16px;
+  padding: 24px;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+}
+
+body.dark .dashboard-card {
+  background: rgba(58,39,96,0.9);
+  border: 1px solid #6b3cff;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+
+.dashboard-card h3 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.dashboard-card p {
+  opacity: 0.7;
+  font-size: 14px;
+}
+
+/* ================= EMPTY STATE ================= */
+
+.empty-dashboard {
+  text-align: center;
+  margin-top: 80px;
+  opacity: 0.6;
+}
+
+/* ================= BUTTON ================= */
+
+.dashboard-btn {
+  margin-top: 20px;
+  background: #b399f9;
+  color: #fff;
+  padding: 12px 26px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+body.dark .dashboard-btn {
+  background:#9d7ff2;
+}
+
+.dashboard-btn:hover {
+  transform: translateY(-2px);
+  background: #9d7ff2;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 600px) {
+  .roadmap-dashboard {
+    padding: 100px 20px 40px;
+  }
+
+  .dashboard-header h1 {
+    font-size: 32px;
+  }
+}
+.dashboard-container {
+  padding: 120px 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.dashboard-container h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.roadmap-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.roadmap-card {
+  background: rgba(255,255,255,0.9);
+  padding: 20px;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.roadmap-card:hover {
+  transform: translateY(-6px);
+}
+
+body.dark .roadmap-card {
+  background: rgba(58,39,96,0.9);
+
+}
+
+.generate-btn{
+  background: #9d7ff2;
+  color: white;
+  border: none;
+    padding: 10px 22px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
