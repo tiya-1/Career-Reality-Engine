@@ -33,11 +33,6 @@ An AI-powered career guidance platform that helps students discover suitable car
 - Score calculation
 - Instant feedback
 
-### 📚 RAG (Retrieval Augmented Generation)
-- Uses career-specific context
-- Better roadmap generation
-- More relevant skill assessments
-
 ---
 
 ## 🛠 Tech Stack
@@ -169,7 +164,7 @@ http://localhost:5000
 - AI Roadmap Generator
 - Progress Tracker
 - Skill Test Generator
-- RAG Context Retrieval
+
 
 ---
 
