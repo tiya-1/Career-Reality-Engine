@@ -57,7 +57,6 @@ An AI-powered career guidance platform that helps students discover suitable car
 ### AI
 - Groq API
 - Llama 3.3 70B
-- Retrieval Augmented Generation (RAG)
 
 ---
 
